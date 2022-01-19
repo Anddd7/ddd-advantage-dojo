@@ -1,5 +1,5 @@
 applicationType: default
-defaultPackage: ddd.advantage.dojo
+defaultPackage: com.thoughtworks.dojo
 testFramework: junit
 sourceLanguage: kotlin
 buildTool: gradle
