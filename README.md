@@ -1,12 +1,3 @@
-## Micronaut 3.2.7 Documentation
+# DDD Dojo
 
-- [User Guide](https://docs.micronaut.io/3.2.7/guide/index.html)
-- [API Reference](https://docs.micronaut.io/3.2.7/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/3.2.7/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
-
-## Feature http-client documentation
-
-- [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
-
+**NOTICE: 代码/文档中涉及的任何实体和个人均为虚构产物, 请勿与实际生活场景对应.**
