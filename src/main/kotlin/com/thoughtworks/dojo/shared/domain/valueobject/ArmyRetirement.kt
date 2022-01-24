@@ -1,4 +1,4 @@
-package com.thoughtworks.dojo.shared.domain
+package com.thoughtworks.dojo.shared.domain.valueobject
 
 import java.time.LocalDate
 

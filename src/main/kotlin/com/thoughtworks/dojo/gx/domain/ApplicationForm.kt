@@ -1,13 +1,13 @@
 package com.thoughtworks.dojo.gx.domain
 
-import com.thoughtworks.dojo.shared.domain.ApplicantInfo
-import com.thoughtworks.dojo.shared.domain.ApplicationForm
-import com.thoughtworks.dojo.shared.domain.Appointment
+import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationForm
+import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationFormId
+import com.thoughtworks.dojo.shared.domain.valueobject.ApplicantInfo
+import com.thoughtworks.dojo.shared.domain.valueobject.Appointment
 import java.time.LocalDate
-import java.util.UUID
 
-data class GaoXinApplicationForm(
-    override val id: UUID,
+data class ApplicationForm(
+    override val id: ApplicationFormId,
     override val applicant: ApplicantInfo,
     override val appointment: Appointment,
     val education: Education? = null,

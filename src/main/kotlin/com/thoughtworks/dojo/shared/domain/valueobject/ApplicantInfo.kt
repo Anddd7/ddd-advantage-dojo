@@ -1,4 +1,4 @@
-package com.thoughtworks.dojo.shared.domain
+package com.thoughtworks.dojo.shared.domain.valueobject
 
 import com.thoughtworks.dojo.supporting.valueobject.Address
 import com.thoughtworks.dojo.supporting.valueobject.Identity

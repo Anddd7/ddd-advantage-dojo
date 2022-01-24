@@ -8,4 +8,3 @@ fun main(args: Array<String>) {
         .packages("com.thoughtworks.dojo")
         .start()
 }
-
