@@ -1,8 +1,8 @@
 package com.thoughtworks.dojo.shared.domain
 
-import java.time.ZonedDateTime
+import java.time.LocalDate
 
 data class ArmyRetirement(
-    val retiredAt: ZonedDateTime,
+    val retiredAt: LocalDate,
     val retiredFrom: String,
 )
