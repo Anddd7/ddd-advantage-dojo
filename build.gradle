@@ -43,6 +43,10 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     compileOnly("org.graalvm.nativeimage:svm")
+
+    /* architecture verification */
+    testImplementation("com.tngtech.archunit:archunit-junit5-api:0.16.0")
+    testRuntimeOnly("com.tngtech.archunit:archunit-junit5-engine:0.16.0")
 }
 
 

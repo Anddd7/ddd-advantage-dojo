@@ -1,7 +1,7 @@
 package com.thoughtworks.dojo.gx.domain
 
-import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationForm
 import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationFormId
+import com.thoughtworks.dojo.shared.domain.applicationform.SharedApplicationForm
 import com.thoughtworks.dojo.shared.domain.valueobject.ApplicantInfo
 import com.thoughtworks.dojo.shared.domain.valueobject.Appointment
 import java.time.LocalDate
@@ -11,7 +11,7 @@ data class ApplicationForm(
     override val applicant: ApplicantInfo,
     override val appointment: Appointment,
     val education: Education? = null,
-) : ApplicationForm
+) : SharedApplicationForm
 
 data class Education(
     val school: String,

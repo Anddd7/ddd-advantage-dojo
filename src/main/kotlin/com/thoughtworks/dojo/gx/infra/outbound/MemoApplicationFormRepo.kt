@@ -1,12 +1,12 @@
 package com.thoughtworks.dojo.gx.infra.outbound
 
 import com.thoughtworks.dojo.gx.domain.ApplicationForm
+import com.thoughtworks.dojo.shared.domain.applicationform.AbstractApplicationFormRepo
 import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationFormId
-import com.thoughtworks.dojo.shared.domain.applicationform.ApplicationFormRepo
 import jakarta.inject.Singleton
 
 @Singleton
-class MemoApplicationFormRepo : ApplicationFormRepo<ApplicationForm> {
+class MemoApplicationFormRepo : AbstractApplicationFormRepo<ApplicationForm> {
     private val storage = mutableMapOf<ApplicationFormId, ApplicationForm>()
     override fun get(id: ApplicationFormId): ApplicationForm {
         return storage.getValue(id)

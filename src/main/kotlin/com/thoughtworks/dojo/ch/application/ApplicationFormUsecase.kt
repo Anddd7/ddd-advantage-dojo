@@ -1,7 +1,6 @@
-package com.thoughtworks.dojo.gx.application
+package com.thoughtworks.dojo.ch.application
 
-import com.thoughtworks.dojo.gx.domain.ApplicationForm
-import com.thoughtworks.dojo.gx.domain.Education
+import com.thoughtworks.dojo.ch.domain.ApplicationForm
 import com.thoughtworks.dojo.shared.application.AbstractApplicationFormUsecase
 import com.thoughtworks.dojo.shared.application.SharedSubmitRequest
 import com.thoughtworks.dojo.shared.domain.applicationform.AbstractApplicationFormRepo
@@ -22,12 +21,10 @@ class ApplicationFormUsecase(
             id = ApplicationFormId("0"),
             request.applicant,
             appointment,
-            (request as SubmitRequest).education
         )
 }
 
 data class SubmitRequest(
     override val applicant: ApplicantInfo,
     override val police: Police,
-    val education: Education?,
 ) : SharedSubmitRequest

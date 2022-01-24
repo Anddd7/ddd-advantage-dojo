@@ -1,15 +1,15 @@
-package com.thoughtworks.dojo.gx.infra.inbound
+package com.thoughtworks.dojo.ch.infra.inbound
 
-import com.thoughtworks.dojo.gx.application.ApplicationFormUsecase
-import com.thoughtworks.dojo.gx.domain.ApplicationForm
-import com.thoughtworks.dojo.gx.infra.outbound.MemoApplicationFormRepo
+import com.thoughtworks.dojo.ch.application.ApplicationFormUsecase
+import com.thoughtworks.dojo.ch.domain.ApplicationForm
+import com.thoughtworks.dojo.ch.infra.outbound.MemoApplicationFormRepo
 import com.thoughtworks.dojo.shared.application.SharedSubmitRequest
 import com.thoughtworks.dojo.shared.domain.applicationform.AbstractApplicationFormRepo
 import io.micronaut.http.annotation.Body
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Post
 
-@Controller("/gx/application-form")
+@Controller("/ch/application-form")
 class ApplicationFormController(
     private val usecase: ApplicationFormUsecase,
     private val repo: AbstractApplicationFormRepo<ApplicationForm>,

@@ -5,7 +5,7 @@ import com.thoughtworks.dojo.shared.domain.valueobject.Appointment
 
 data class ApplicationFormId(val value: String)
 
-interface ApplicationForm {
+interface SharedApplicationForm {
     val id: ApplicationFormId
     val applicant: ApplicantInfo
     val appointment: Appointment

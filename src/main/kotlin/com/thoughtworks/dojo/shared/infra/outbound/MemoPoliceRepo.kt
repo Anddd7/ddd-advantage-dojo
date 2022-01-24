@@ -3,6 +3,7 @@ package com.thoughtworks.dojo.shared.infra.outbound
 import com.thoughtworks.dojo.shared.domain.police.PoliceRepo
 import com.thoughtworks.dojo.shared.domain.valueobject.Appointment
 import com.thoughtworks.dojo.shared.domain.valueobject.Police
+import com.thoughtworks.dojo.shared.domain.valueobject.Timeslot
 import io.micronaut.http.client.HttpClient
 import io.micronaut.http.client.annotation.Client
 import jakarta.inject.Inject
@@ -19,6 +20,10 @@ class MemoPoliceRepo(
     }
 
     override fun list(): List<Police> {
+        TODO("client.request")
+    }
+
+    override fun cancelAppointment(police: Police, timeslot: Timeslot) {
         TODO("client.request")
     }
 }
